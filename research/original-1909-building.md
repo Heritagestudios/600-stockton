@@ -139,7 +139,71 @@ building.
 [Explain what these changes may indicate, while distinguishing
 interpretation from documented evidence.]
 
----
+---## 6. Early Photographic Evidence — 1914–1915
+
+A photographic collection documenting the Metropolitan Life building
+contains photographs dated approximately 1914–1915.
+
+These photographs represent the earliest known photographic evidence
+currently identified for the building.
+
+Because the photographs date only approximately five to six years after
+the documented 1909 construction date, they provide important evidence
+for understanding the building's early appearance.
+
+### What the Photographs Can Establish
+
+The photographs can potentially document:
+
+- overall building massing
+- Stockton Street facade
+- Ionic portico
+- white terra-cotta exterior
+- statuary
+- windows
+- entrances
+- roofline
+- relationship to surrounding buildings
+- streetscape
+- early landscaping
+
+### Important Limitation
+
+The photographs should not automatically be treated as representations
+of the original 1909 building.
+
+San Francisco historic-resource documentation identifies two symmetrical
+wings added in 1914, probably by Lebrun.
+
+Therefore, the 1914–1915 photographs may show:
+
+1. the original 1909 building;
+2. the building during the 1914 expansion; or
+3. the building after the 1914 additions.
+
+The relationship between the photographs and the 1914 additions must be
+established through comparison with Sanborn maps and other documentary
+sources.
+
+### Research Method
+
+The photographs will be compared against:
+
+- 1913–1915 Sanborn map
+- 1919 Sanborn map
+- historic-resource documentation
+- later photographs
+- architectural drawings or permits if located
+
+### Evidence Status
+
+**Photographic evidence:** Early photographic record, approximately
+1914–1915.
+
+**Construction date:** 1909, documented independently.
+
+**1914 additions:** Documented by historic-resource record; exact
+relationship to photographs requires further verification.
 
 ## 7. Original 1909 Elements — Working List
 
