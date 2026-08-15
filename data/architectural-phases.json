@@ -1,0 +1,114 @@
+{
+  "project": "600 Stockton Street Architectural Evolution",
+  "description": "Evidence-based spatial reconstruction of the Metropolitan Life Insurance Company building.",
+  "coordinate_system": "local_building_coordinates",
+  "phases": [
+    {
+      "id": "1909",
+      "name": "Original Metropolitan Life Building",
+      "date_start": 1908,
+      "date_end": 1909,
+      "confidence": "B",
+      "evidence": [
+        "PCAD building record 17756",
+        "San Francisco Planning historic resource documentation"
+      ],
+      "geometry": {
+        "type": "rectangle",
+        "known_dimension": {
+          "stockton_frontage_feet": 80
+        },
+        "unknown_dimensions": [
+          "depth",
+          "height"
+        ]
+      },
+      "facade": {
+        "bays": 5,
+        "central_pediment": true,
+        "ionic_columns": true,
+        "pedimented_portico": true,
+        "material": "white terra cotta"
+      },
+      "notes": [
+        "Original portion formed a rectangle.",
+        "Long side paralleled approximately 80 feet of Stockton Street.",
+        "Exact footprint dimensions require additional primary-source verification."
+      ]
+    },
+    {
+      "id": "1913-1914",
+      "name": "First Major Expansion",
+      "date_start": 1913,
+      "date_end": 1914,
+      "confidence": "B",
+      "evidence": [
+        "PCAD building record 17756",
+        "San Francisco Planning documentation",
+        "1913-1915 Sanborn map"
+      ],
+      "geometry": {
+        "type": "u_shape",
+        "wings": [
+          {
+            "street": "California Street",
+            "width_feet": 28
+          },
+          {
+            "street": "Pine Street",
+            "width_feet": 28
+          }
+        ]
+      },
+      "program": [
+        "additional offices",
+        "rooftop garden",
+        "dining room",
+        "kitchen",
+        "subbasement"
+      ],
+      "notes": [
+        "The wings stepped down the steep Nob Hill site.",
+        "The expansion was associated with construction of the Stockton Street Tunnel."
+      ]
+    },
+    {
+      "id": "1915",
+      "name": "Construction Documentation",
+      "date": "1915-05-12",
+      "confidence": "A",
+      "evidence": [
+        "OpenSFHistory wnp36.00789"
+      ],
+      "photograph": {
+        "title": "Pine & Stockton",
+        "photographer": "Horace Chaffee",
+        "collection": "San Francisco Department of Public Works"
+      },
+      "notes": [
+        "Photograph directly documents Metropolitan Life construction activity.",
+        "Photograph should be compared with the 1913-1915 Sanborn footprint."
+      ]
+    },
+    {
+      "id": "1919-1920",
+      "name": "Second Major Expansion",
+      "date_start": 1919,
+      "date_end": 1920,
+      "confidence": "B",
+      "evidence": [
+        "PCAD building record 17756",
+        "San Francisco Planning documentation"
+      ],
+      "geometry": {
+        "type": "expanded_complex",
+        "exact_dimensions": "unknown"
+      },
+      "notes": [
+        "Additional office space was added.",
+        "Timothy Pflueger supervised the work according to PCAD.",
+        "Exact geometry requires further map and archival analysis."
+      ]
+    }
+  ]
+}
