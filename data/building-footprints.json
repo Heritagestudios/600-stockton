@@ -1,0 +1,126 @@
+{
+  "project": "600 Stockton Street",
+  "dataset": "Building Footprints",
+  "description": "Structured evidence for reconstructing the changing footprint of 600 Stockton Street over time.",
+  "coordinate_system": "historical_plan",
+  "status": "research_in_progress",
+
+  "periods": [
+    {
+      "year": "1886-1887",
+      "building_name": "Pre-Metropolitan Life site",
+      "source": "Sanborn Fire Insurance Map, 1886-1887",
+      "building_present": false,
+      "footprint_status": "documented",
+      "description": "The site predates the Metropolitan Life headquarters. The Sanborn map is being used to establish the buildings and parcel conditions that existed before the 1909 construction.",
+      "geometry": null,
+      "confidence": "primary_source",
+      "notes": [
+        "Exact footprint geometry will be digitized from the original Sanborn map.",
+        "This period establishes the pre-1909 site condition."
+      ]
+    },
+
+    {
+      "year": "1909",
+      "building_name": "Metropolitan Life Insurance Company Pacific Coast Head Office",
+      "source": "Historical research and architectural sources",
+      "building_present": true,
+      "footprint_status": "partially_documented",
+      "description": "The original Metropolitan Life headquarters was a substantially smaller Stockton-facing building that later became the core of the expanded complex.",
+      "geometry": {
+        "shape": "rectangular",
+        "frontage_feet": null,
+        "depth_feet": null
+      },
+      "dimension_conflict": {
+        "sanborn_interpretation": {
+          "frontage_feet": 60,
+          "depth_feet": 80,
+          "status": "working_measurement"
+        },
+        "pcad_interpretation": {
+          "stockton_frontage_feet": 80,
+          "status": "secondary_source"
+        },
+        "resolution": "unresolved"
+      },
+      "confidence": "mixed_primary_secondary",
+      "notes": [
+        "Do not treat the 60-foot and 80-foot measurements as resolved.",
+        "The discrepancy will be investigated through additional maps, permits, plans, and photographs.",
+        "The original structure should be distinguished from later additions."
+      ]
+    },
+
+    {
+      "year": "1913-1915",
+      "building_name": "Metropolitan Life Insurance Company",
+      "source": "Sanborn Fire Insurance Map, 1913-1915",
+      "building_present": true,
+      "footprint_status": "documented",
+      "description": "The Sanborn map documents the Metropolitan Life building during the early expansion period. The original Stockton-facing structure can be compared with the enlarged footprint shown in this period.",
+      "geometry": {
+        "shape": "expanded_rectangular_complex",
+        "frontage_feet": null,
+        "depth_feet": null
+      },
+      "confidence": "primary_source",
+      "notes": [
+        "Exact dimensions will be extracted from the map.",
+        "The 1914-1915 photographs will be used as visual evidence for comparison.",
+        "This period is critical for identifying the first major expansion beyond the 1909 core."
+      ]
+    },
+
+    {
+      "year": "1919",
+      "building_name": "Metropolitan Life Insurance Company",
+      "source": "Sanborn Fire Insurance Map, 1919, Sheet 47",
+      "building_present": true,
+      "footprint_status": "documented",
+      "description": "The 1919 Sanborn map shows a substantially expanded Metropolitan Life complex compared with the earlier building footprint.",
+      "geometry": {
+        "shape": "expanded_complex",
+        "frontage_feet": null,
+        "depth_feet": null,
+        "courtyard": true
+      },
+      "confidence": "primary_source",
+      "notes": [
+        "The 1919 map should be treated as direct evidence for the building footprint.",
+        "Exact dimensions have not yet been fully extracted.",
+        "The relationship between the original 1909 core and later additions requires further tracing.",
+        "Handwritten annotations on the map require separate interpretation."
+      ]
+    },
+
+    {
+      "year": "1953",
+      "building_name": "Metropolitan Life / later expanded complex",
+      "source": "Historic architectural documentation",
+      "building_present": true,
+      "footprint_status": "documented_in_research",
+      "description": "By the mid-twentieth century the building had undergone multiple expansion campaigns and formed the larger complex that survives today.",
+      "geometry": {
+        "shape": "multi_wing_complex",
+        "courtyard": true
+      },
+      "confidence": "secondary_source",
+      "notes": [
+        "1953 represents the endpoint of the major expansion sequence used in this project.",
+        "Later alterations should be documented separately from the historic expansion phases."
+      ]
+    }
+  ],
+
+  "research_priorities": [
+    "Digitize the 1886-1887 footprint.",
+    "Digitize the 1913-1915 footprint.",
+    "Digitize the 1919 footprint.",
+    "Resolve the 1909 dimensional discrepancy.",
+    "Identify which portions of the 1919 footprint belong to earlier construction phases.",
+    "Compare map footprints with 1914-1915 photographs.",
+    "Eventually create a spatially accurate digital reconstruction."
+  ]
+}
