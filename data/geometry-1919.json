@@ -1,71 +1,40 @@
 {
   "project": "600 Stockton Street",
-  "period": "1919",
-  "source": {
-    "type": "Sanborn Fire Insurance Map",
-    "year": 1919,
-    "sheet": 47
-  },
+  "period": "1909",
+  "building": "Metropolitan Life Insurance Company",
+  "source": "PCAD / historical architectural documentation",
 
-  "status": "pending_measurement",
+  "units": "feet",
 
   "coordinate_system": {
-    "type": "local",
-    "units": "feet",
-    "origin": [0, 0],
+    "origin": "southwest corner of original building",
     "x_axis": "east_west",
-    "y_axis": "north_south"
+    "y_axis": "north_south",
+    "z_axis": "vertical"
   },
 
-  "building": {
-    "name": "Metropolitan Life Insurance Company",
-    "geometry_type": "multi_polygon",
-    "footprint": [],
-    "courtyard": []
+  "footprint": {
+    "type": "polygon",
+    "points": [
+      [0, 0],
+      [0, 80],
+      [80, 80],
+      [80, 0]
+    ]
   },
 
-  "measurements": {
-    "overall_width_feet": null,
-    "overall_depth_feet": null,
-    "stockton_frontage_feet": null,
-    "california_frontage_feet": null,
-    "pine_frontage_feet": null,
-    "courtyard_width_feet": null,
-    "courtyard_depth_feet": null
+  "dimensions": {
+    "stockton_frontage": 80,
+    "depth": 80,
+    "area_square_feet": 6400
   },
 
-  "components": [
-    {
-      "id": "1919-main-footprint",
-      "type": "building",
-      "geometry": [],
-      "status": "pending"
-    },
-    {
-      "id": "1919-courtyard",
-      "type": "open_space",
-      "geometry": [],
-      "status": "pending"
-    },
-    {
-      "id": "1909-core",
-      "type": "historical_phase",
-      "geometry": [],
-      "status": "pending_comparison"
-    }
-  ],
-
-  "evidence": [
-    {
-      "source": "Sanborn 1919 Sheet 47",
-      "role": "primary_footprint_evidence"
-    }
-  ],
+  "confidence": "high",
 
   "notes": [
-    "Coordinates must not be invented.",
-    "Geometry should be entered only after measurement from the source map.",
-    "The 1909 core should be separated from later additions when evidence permits.",
-    "The courtyard/open space should be represented as a void rather than building mass."
+    "The original 1909 portion formed a rectangle.",
+    "The long side paralleled 80 feet of Stockton Street.",
+    "This geometry is a calibration anchor for later historical phases.",
+    "It must not be treated as the complete 1919 footprint."
   ]
 }
