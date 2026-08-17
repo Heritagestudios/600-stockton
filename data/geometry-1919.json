@@ -1,21 +1,28 @@
 {
   "project": "600 Stockton Street",
-  "period": "1909",
+  "period": "1919",
   "building": "Metropolitan Life Insurance Company",
-  "source": "PCAD / historical architectural documentation",
+
+  "source": {
+    "primary": "Sanborn Fire Insurance Map",
+    "year": 1919,
+    "sheet": 47,
+    "block": "257 (1161)"
+  },
 
   "units": "feet",
 
   "coordinate_system": {
-    "origin": "southwest corner of original building",
+    "origin": "to be established from 1909 calibration footprint",
     "x_axis": "east_west",
     "y_axis": "north_south",
     "z_axis": "vertical"
   },
 
-  "footprint": {
-    "type": "polygon",
-    "points": [
+  "historical_anchor": {
+    "period": "1909",
+    "file": "geometry-1909.json",
+    "footprint": [
       [0, 0],
       [0, 80],
       [80, 80],
@@ -23,18 +30,58 @@
     ]
   },
 
-  "dimensions": {
-    "stockton_frontage": 80,
-    "depth": 80,
-    "area_square_feet": 6400
+  "footprint": {
+    "type": "multi_polygon",
+    "status": "pending_digitization",
+    "polygons": []
   },
 
-  "confidence": "high",
+  "known_dimensions": {
+    "original_stockton_frontage": 80,
+    "original_depth": 80,
+    "1913_1914_wing_dimension": 28
+  },
+
+  "site_calibration": {
+    "stockton_block_frontage": 275,
+    "stockton_street_width": 68.75
+  },
+
+  "historical_phases": [
+    {
+      "period": "1909",
+      "status": "verified_anchor",
+      "geometry_file": "geometry-1909.json"
+    },
+    {
+      "period": "1913-1914",
+      "status": "documented_expansion",
+      "geometry_status": "pending_digitization"
+    },
+    {
+      "period": "1919",
+      "status": "sanborn_documented",
+      "geometry_status": "pending_digitization"
+    },
+    {
+      "period": "1919-1920",
+      "status": "documented_expansion",
+      "geometry_status": "pending_digitization"
+    }
+  ],
+
+  "confidence": {
+    "1909_core": "high",
+    "1913_1914_expansion": "supported",
+    "1919_footprint": "pending_digitization",
+    "1919_1920_expansion": "supported"
+  },
 
   "notes": [
-    "The original 1909 portion formed a rectangle.",
-    "The long side paralleled 80 feet of Stockton Street.",
-    "This geometry is a calibration anchor for later historical phases.",
-    "It must not be treated as the complete 1919 footprint."
+    "The 1909 80-foot rectangular building is used as the primary geometric calibration anchor.",
+    "The complete 1919 footprint must be digitized from the 1919 Sanborn sheet.",
+    "The 1919 Sanborn condition must not be conflated with the later 1919-1920 expansion.",
+    "Block and street dimensions are independent calibration checks.",
+    "No unverified coordinates should be introduced."
   ]
 }
