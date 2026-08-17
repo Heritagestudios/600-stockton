@@ -1,0 +1,71 @@
+{
+  "project": "600 Stockton Street",
+  "period": "1919",
+  "source": {
+    "type": "Sanborn Fire Insurance Map",
+    "year": 1919,
+    "sheet": 47
+  },
+
+  "status": "pending_measurement",
+
+  "coordinate_system": {
+    "type": "local",
+    "units": "feet",
+    "origin": [0, 0],
+    "x_axis": "east_west",
+    "y_axis": "north_south"
+  },
+
+  "building": {
+    "name": "Metropolitan Life Insurance Company",
+    "geometry_type": "multi_polygon",
+    "footprint": [],
+    "courtyard": []
+  },
+
+  "measurements": {
+    "overall_width_feet": null,
+    "overall_depth_feet": null,
+    "stockton_frontage_feet": null,
+    "california_frontage_feet": null,
+    "pine_frontage_feet": null,
+    "courtyard_width_feet": null,
+    "courtyard_depth_feet": null
+  },
+
+  "components": [
+    {
+      "id": "1919-main-footprint",
+      "type": "building",
+      "geometry": [],
+      "status": "pending"
+    },
+    {
+      "id": "1919-courtyard",
+      "type": "open_space",
+      "geometry": [],
+      "status": "pending"
+    },
+    {
+      "id": "1909-core",
+      "type": "historical_phase",
+      "geometry": [],
+      "status": "pending_comparison"
+    }
+  ],
+
+  "evidence": [
+    {
+      "source": "Sanborn 1919 Sheet 47",
+      "role": "primary_footprint_evidence"
+    }
+  ],
+
+  "notes": [
+    "Coordinates must not be invented.",
+    "Geometry should be entered only after measurement from the source map.",
+    "The 1909 core should be separated from later additions when evidence permits.",
+    "The courtyard/open space should be represented as a void rather than building mass."
+  ]
+}
