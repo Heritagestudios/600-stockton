@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1000"
+     height="1200"
+     viewBox="0 0 1000 1200">
+
+  <title>600 Stockton Street — 1919 Sanborn Footprint</title>
+
+  <!--
+    Historical reconstruction based on:
+    Sanborn Fire Insurance Map, 1919, Sheet 47
+    Block 257 (1161)
+
+    IMPORTANT:
+    Coordinates are intentionally left as a tracing framework.
+    They must be adjusted against the source map before being treated
+    as measured historical geometry.
+  -->
+
+  <g id="site">
+
+    <!-- Stockton Street -->
+    <rect
+      id="stockton-street"
+      x="0"
+      y="1000"
+      width="1000"
+      height="200"
+      fill="none"
+      stroke="#888"
+      stroke-width="2"/>
+
+    <!-- Metropolitan Life — principal building -->
+    <polygon
+      id="metropolitan-life-principal"
+      points="
+        250,650
+        750,650
+        750,950
+        250,950
+      "
+      fill="none"
+      stroke="#000"
+      stroke-width="4"/>
+
+    <!-- Northern building area -->
+    <polygon
+      id="metropolitan-life-northern-extension"
+      points="
+        250,300
+        750,300
+        750,650
+        250,650
+      "
+      fill="none"
+      stroke="#000"
+      stroke-width="4"/>
+
+    <!-- Internal open area / courtyard placeholder -->
+    <polygon
+      id="open-space"
+      points="
+        430,400
+        600,400
+        600,650
+        430,650
+      "
+      fill="none"
+      stroke="#666"
+      stroke-width="3"
+      stroke-dasharray="10 8"/>
+
+  </g>
+
+  <!-- Labels -->
+  <g
+    font-family="Arial, sans-serif"
+    font-size="24"
+    fill="#000">
+
+    <text x="350" y="1100">
+      STOCKTON STREET
+    </text>
+
+    <text x="300" y="800">
+      METROPOLITAN LIFE
+    </text>
+
+    <text x="300" y="830">
+      PRINCIPAL BUILDING
+    </text>
+
+    <text x="330" y="500">
+      NORTHERN AREA
+    </text>
+
+    <text x="450" y="540">
+      OPEN SPACE
+    </text>
+
+  </g>
+
+</svg>
