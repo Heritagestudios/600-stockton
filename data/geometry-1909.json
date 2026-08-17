@@ -1,0 +1,40 @@
+{
+  "project": "600 Stockton Street",
+  "period": "1909",
+  "building": "Metropolitan Life Insurance Company",
+  "source": "PCAD / historical architectural documentation",
+
+  "units": "feet",
+
+  "coordinate_system": {
+    "origin": "southwest corner of original building",
+    "x_axis": "east_west",
+    "y_axis": "north_south",
+    "z_axis": "vertical"
+  },
+
+  "footprint": {
+    "type": "polygon",
+    "points": [
+      [0, 0],
+      [0, 80],
+      [80, 80],
+      [80, 0]
+    ]
+  },
+
+  "dimensions": {
+    "stockton_frontage": 80,
+    "depth": 80,
+    "area_square_feet": 6400
+  },
+
+  "confidence": "high",
+
+  "notes": [
+    "The original 1909 portion formed a rectangle.",
+    "The long side paralleled 80 feet of Stockton Street.",
+    "This geometry is a calibration anchor for later historical phases.",
+    "It must not be treated as the complete 1919 footprint."
+  ]
+}
