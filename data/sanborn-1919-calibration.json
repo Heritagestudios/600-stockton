@@ -1,0 +1,76 @@
+{
+  "project": "600 Stockton Street",
+  "source": {
+    "map": "Sanborn Fire Insurance Map",
+    "year": 1919,
+    "sheet": 47,
+    "block": "257 (1161)"
+  },
+
+  "units": "feet",
+
+  "calibration_anchors": [
+    {
+      "id": "stockton_street",
+      "feature": "Stockton Street width",
+      "value_feet": 68.6667,
+      "original_label": "68'8\"",
+      "status": "confirmed",
+      "use": "primary_scale_check"
+    },
+    {
+      "id": "pine_street",
+      "feature": "Pine Street width",
+      "value_feet": 68.75,
+      "original_label": "68'9\"",
+      "status": "confirmed",
+      "use": "primary_scale_check"
+    },
+    {
+      "id": "joice_street",
+      "feature": "Joice Street width",
+      "value_feet": 25.5,
+      "original_label": "25'6\"",
+      "status": "confirmed",
+      "use": "secondary_scale_check"
+    },
+    {
+      "id": "virginia_court",
+      "feature": "Virginia Court / alley width",
+      "value_feet": 20,
+      "original_label": "20'",
+      "status": "confirmed",
+      "use": "secondary_scale_check"
+    }
+  ],
+
+  "building_dimensions": {
+    "metropolitan_life_frontage": {
+      "value_feet": null,
+      "status": "unresolved",
+      "note": "Do not use the 68'9\" street-width annotation as the building frontage."
+    },
+    "original_1909_dimension": {
+      "value_feet": 80,
+      "status": "historically_documented",
+      "use": "historical_cross_check"
+    },
+    "main_depth": {
+      "value_feet": null,
+      "status": "pending_measurement"
+    }
+  },
+
+  "scale": {
+    "feet_per_pixel": null,
+    "pixels_per_foot": null,
+    "status": "pending_pixel_measurement"
+  },
+
+  "notes": [
+    "Street and alley dimensions are being used as independent calibration anchors.",
+    "The 68'9\" Stockton-related annotation must not be assumed to represent the Metropolitan Life building frontage.",
+    "The complete 1919 building footprint will be traced only after scale calibration.",
+    "No unverified building dimensions should be introduced."
+  ]
+}
