@@ -16,7 +16,7 @@
       "value_feet": 68.6667,
       "original_label": "68'8\"",
       "status": "confirmed",
-      "use": "primary_scale_check"
+      "use": "scale_check"
     },
     {
       "id": "pine_street",
@@ -24,7 +24,7 @@
       "value_feet": 68.75,
       "original_label": "68'9\"",
       "status": "confirmed",
-      "use": "primary_scale_check"
+      "use": "scale_check"
     },
     {
       "id": "joice_street",
@@ -32,45 +32,58 @@
       "value_feet": 25.5,
       "original_label": "25'6\"",
       "status": "confirmed",
-      "use": "secondary_scale_check"
+      "use": "scale_check"
     },
     {
       "id": "virginia_court",
-      "feature": "Virginia Court / alley width",
+      "feature": "Virginia Court / property separation",
       "value_feet": 20,
       "original_label": "20'",
       "status": "confirmed",
-      "use": "secondary_scale_check"
+      "use": "site_context"
     }
   ],
 
-  "building_dimensions": {
-    "metropolitan_life_frontage": {
-      "value_feet": null,
-      "status": "unresolved",
-      "note": "Do not use the 68'9\" street-width annotation as the building frontage."
-    },
-    "original_1909_dimension": {
-      "value_feet": 80,
-      "status": "historically_documented",
-      "use": "historical_cross_check"
-    },
-    "main_depth": {
-      "value_feet": null,
-      "status": "pending_measurement"
-    }
+  "metropolitan_life_building": {
+    "frontage_feet": 68.75,
+    "depth_feet": 80,
+    "status": "source_derived",
+    "source": "1919 Sanborn Sheet 47"
+  },
+
+  "rear_layout": {
+    "dimension_feet": 25.5,
+    "status": "source_derived",
+    "note": "Retain as a contextual/rear-layout measurement until its exact geometric role is mapped."
+  },
+
+  "lightwell": {
+    "width_feet": 8.25,
+    "depth_feet": 24.5,
+    "status": "source_derived"
+  },
+
+  "site_offsets": {
+    "virginia_court_clearance_feet": 20,
+    "status": "source_derived"
   },
 
   "scale": {
     "feet_per_pixel": null,
     "pixels_per_foot": null,
-    "status": "pending_pixel_measurement"
+    "status": "pending_pixel_calibration"
+  },
+
+  "geometry": {
+    "type": "polygon_with_recess",
+    "status": "pending_corner_trace"
   },
 
   "notes": [
-    "Street and alley dimensions are being used as independent calibration anchors.",
-    "The 68'9\" Stockton-related annotation must not be assumed to represent the Metropolitan Life building frontage.",
-    "The complete 1919 building footprint will be traced only after scale calibration.",
-    "No unverified building dimensions should be introduced."
+    "The 1919 building is not being modeled as a simple rectangle.",
+    "The 8'3\" x 24'6\" lightwell/recess must be represented in the footprint geometry.",
+    "The 25'6\" and 20' dimensions should not be treated as building dimensions until their exact geometric relationships are traced.",
+    "The complete footprint polygon must be established before Blender geometry is generated.",
+    "No pixel-to-foot conversion is assumed from PPI."
   ]
 }
